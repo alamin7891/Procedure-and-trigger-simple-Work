@@ -9,4 +9,5 @@ IN mobile VARCHAR(50)
 BEGIN
 insert into student values('',name,address,mobile);
 END $$
-DELIMITER ;
+
+DELIMITER;

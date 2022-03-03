@@ -1,0 +1,12 @@
+DELIMITER $$
+
+CREATE PROCEDURE student_entry(
+IN name VARCHAR(50),
+IN address VARCHAR(100),
+IN mobile VARCHAR(50)
+
+)
+BEGIN
+insert into student values('',name,address,mobile);
+END $$
+DELIMITER ;

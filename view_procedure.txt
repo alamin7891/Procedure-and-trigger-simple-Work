@@ -1,0 +1,5 @@
+CREATE VIEW student_show AS
+    SELECT name,address,module_name,totalmarks
+FROM 
+student, result 
+WHERE student.id = result.student_id;

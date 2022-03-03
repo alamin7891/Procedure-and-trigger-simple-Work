@@ -1,0 +1,12 @@
+DELIMITER $$
+
+CREATE TRIGGER after_delete_student
+AFTER DELETE
+ON student FOR EACH ROW
+BEGIN
+    DELETE FROM result
+	WHERE result.student_id = old.id;
+END $$    
+
+DELIMITER ;
+	
